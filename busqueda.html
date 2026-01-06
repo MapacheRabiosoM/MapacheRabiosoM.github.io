@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda | Librería El Gato</title>
+    <link rel="stylesheet" href="estilos.css"> 
+</head>
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Logo</a>
+            
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu_icono" alt="Icono de menú">
+            </label>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li> 
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="resello.html">Resello</a></li>
+                    <li><a href="registro.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Página de Búsqueda</h1>
+                <p>Encuentra tu próximo libro favorito por título, autor o tema.</p>
+            </div>
+            
+            <div class="search-bar">
+                <form action="busqueda.html" method="GET">
+                    <input 
+                        type="text" 
+                        placeholder="Busca libros, autores..." 
+                        name="q" 
+                        class="search-input"
+                        value="<?php echo htmlspecialchars($busqueda); ?>"
+                        required>
+
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer container">
+        <p>&copy; 2025 Librería El Gato. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

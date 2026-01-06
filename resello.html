@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resello | Librería El Gato</title>
+    <link rel="stylesheet" href="estilos.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Logo</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu_icono" alt="Icono de menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="resello.html">Resello</a></li>
+                    <li><a href="registro.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Servicios de Resello y Renovación</h1>
+                <p>Extiende el período de préstamo de tus libros fácilmente y revisa nuestras políticas de recargos.</p>
+                <a href="#recargos-politica" class="btn-1">Ver Política de Recargos</a>
+            </div>
+        </div>
+    </header>
+ 
+
+    <main class="content-resello container" style="padding: 50px 0;">
+        
+        <!-- Formulario para simular el Resello en Línea -->
+        <section id="resello-formulario">
+            <h2>Solicitud de Resello en Línea</h2>
+            <p style="margin-bottom: 25px; color: #DADADA;">Utiliza este formulario para solicitarnos una extensión del período de préstamo de tu libro. Te contactaremos para confirmar la renovación.</p>
+            
+            <form action="https://formsubmit.co/arigfesc@gmail.com" method="POST" style="max-width: 600px; margin: 20px auto 50px auto; padding: 25px; background-color: #3A3A3A; border-radius: 10px;">
+                
+                <div class="form-group" style="flex-direction: column; gap: 15px;">
+                    <!-- Campos de Identificación del Usuario -->
+                    <label style="color: #FEFBF8; font-weight: 500; margin-bottom: 5px; display: block;">Datos del Solicitante</label>
+                    <input type="text" placeholder="Tu Nombre Completo" name="name" class="campo" required style="width: 100%; margin-bottom: 10px;">
+                    <input type="email" placeholder="Tu Email (Para confirmación)" name="email" class="campo" required style="width: 100%; margin-bottom: 25px;">
+
+                    <label style="color: #FEFBF8; font-weight: 500; margin-bottom: 5px; display: block;">Información del Libro</label>
+                    <input type="text" placeholder="Título del Libro" name="book_title" class="campo" required style="width: 100%; margin-bottom: 10px;">
+                    <input type="text" placeholder="Código de Préstamo o ISBN" name="isbn_code" class="campo" required style="width: 100%;">
+
+                    <label style="color: #FEFBF8; font-weight: 500; margin-top: 20px; margin-bottom: 5px; display: block;">Comentarios Adicionales (Opcional)</label>
+                    <textarea name="comments" cols="30" rows="3" placeholder="¿Algún motivo o pregunta sobre la renovación?" class="campo" style="width: 100%;"></textarea>
+                </div>
+                
+                <input type="submit" value="Solicitar Resello" class="btn-1" style="width: 100%; margin-top: 30px;">
+                <input type="hidden" name="_captcha" value="false">
+                
+            </form>
+        </section>
+
+        <!-- Tabla de Recargos y Política de Devolución -->
+        <section id="recargos-politica" style="margin-top: 80px; padding: 30px; background-color: #3A3A3A; border-radius: 10px;">
+            <h2 style="color: #FEFBF8; margin-bottom: 20px; text-align: center;">Política de Recargos por Demora</h2>
+            <p style="color: #DADADA; margin-bottom: 30px;">Es importante recordar que el resello debe solicitarse antes de la fecha de vencimiento original. Los recargos se aplican diariamente una vez superada la fecha límite de devolución:</p>
+
+            <table style="width: 100%; border-collapse: collapse; text-align: left; color: #FEFBF8;">
+                <thead>
+                    <tr style="background-color: #2D2C32;">
+                        <th style="padding: 12px; border: 1px solid #444;">Período de Demora</th>
+                        <th style="padding: 12px; border: 1px solid #444;">Recargo por Libro (por día)</th>
+                        <th style="padding: 12px; border: 1px solid #444;">Límite del Recargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #444349;">
+                        <td style="padding: 12px; border: 1px solid #444;">Días 1 a 7</td>
+                        <td style="padding: 12px; border: 1px solid #444;">$5.00 MXN</td>
+                        <td style="padding: 12px; border: 1px solid #444;" rowspan="3">Valor total de reposición del libro.</td>
+                    </tr>
+                    <tr style="background-color: #3A3A3A;">
+                        <td style="padding: 12px; border: 1px solid #444;">Días 8 a 30</td>
+                        <td style="padding: 12px; border: 1px solid #444;">$10.00 MXN</td>
+                    </tr>
+                    <tr style="background-color: #444349;">
+                        <td style="padding: 12px; border: 1px solid #444;">Más de 30 días</td>
+                        <td style="padding: 12px; border: 1px solid #444;">$20.00 MXN</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="color: deepskyblue; margin-top: 40px; margin-bottom: 15px; font-size: 20px;">Consecuencias Adicionales:</h3>
+            <ul style="color: #DADADA; list-style: disc; margin-left: 20px;">
+                <li style="margin-bottom: 8px;">La acumulación de recargos puede suspender tu cuenta y tu derecho a nuevos préstamos.</li>
+                <li>Si el libro no es devuelto o el recargo alcanza el costo de reposición, el usuario deberá pagar el precio total del libro para levantar la suspensión.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- 🔽 PIE DE PÁGINA -->
+    <footer class="footer container">
+        <p style="color: #DADADA;">&copy; 2025 Librería El Gato. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

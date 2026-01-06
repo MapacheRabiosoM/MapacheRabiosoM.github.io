@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Librería El Gato</title>
+    <link rel="stylesheet" href="estilos.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu_icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="resello.html">Resello</a></li>
+                    <li><a href="registro.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Ponte en Contacto</h1>
+                <p>Estamos aquí para responder tus preguntas y leer tus comentarios.</p>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="content-contacto container" style="padding: 50px 0;">
+        <h2>Envíanos un Mensaje</h2>
+        <form action="https://formsubmit.co/arigfesc@gmail.com" method="POST" style="max-width: 600px; margin: 20px auto;">
+            <div class="form-group" style="flex-direction: column; gap: 15px;">
+                <div>
+                    <input type="text" placeholder="Nombre" name="name" class="campo" style="width: 100%; margin-bottom: 15px;">
+                    <input type="email" placeholder="Email" name="email" class="campo" style="width: 100%;">
+                </div>
+                <textarea name="message" cols="30" rows="5" placeholder="Mensaje" class="campo" style="width: 100%;"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="btn-1" style="width: 100%;">
+        </form>
+    </main>
+
+     <footer class="footer container">
+        <p>&copy; 2025 Librería El Gato. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
